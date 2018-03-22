@@ -4,9 +4,9 @@ A Docker image for creation protobuf files(Typescript and Javascript) compatible
 随着H5网游的发展，开发者对长连接（Websocket）的使用率逐步上升，而对传输协议Protobuf的使用亦是开发环节中重要的一环。为了完善LayaAir对Protobuf的支持，本人制作了一个可以由proto文件生成可以在Laya中使用的Javascript和Typescript的Docker镜像。  
 # 特点
 * 生成器环境搭建由Docker自动完成，支持全部PC操作系统，运行在隔离环境中，不污染本地开发机。也可以请运维同学协助放到服务器上共享使用。
-* 兼容LayaAir。
-* 支持最新版Protobuf。
 * 在LayaIDE中具有代码提示，方便coding。
+* 支持最新版Protobuf。
+
 # Docker镜像安装(以Linux系统为例)
 ```
 git clone https://github.com/bjfumac/protobuf-layabox-docker.git
