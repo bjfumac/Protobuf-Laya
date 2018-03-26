@@ -16,12 +16,12 @@ git clone https://github.com/bjfumac/protobuf-layabox-docker.git
 cd protobuf-layabox-docker
 sudo docker build -t "bjfumac/protobuf-laya" .
 -- 将下面这行命令中的~/local替换成本地存放proto文件的路径
-docker run --name protobuf-laya -v ~/local:/proto -idt bjfumac/protobuf-laya
+sudo docker run --name protobuf-laya -v ~/local:/proto -idt bjfumac/protobuf-laya
 --以上Docker镜像安装完成
 --每次开机后请执行下面这行命令
-docker start protobuf-laya
+sudo docker start protobuf-laya
 -- 每次重新生成协议请执行下面这行命令(第一次执行可能会报错，再执行一次即可，以后就都正常了)
-docker exec protobuf-laya sh build.sh
+sudo docker exec protobuf-laya sh build.sh
 ```
 # Javascript项目用户
 * 将生成的js文件和protobuf.js上传至bin/libs/文件夹中

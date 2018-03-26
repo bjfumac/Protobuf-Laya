@@ -1,4 +1,5 @@
-FROM node:9.8
+#FROM node:9.8
+FROM registry.cn-hangzhou.aliyuncs.com/zuowenbo/nodejs
 MAINTAINER bjfumac "macvsapple@gmail.com"
 RUN npm install  protobufjs chalk minimist glob tmp semver uglify-js espree escodegen estraverse -g
 VOLUME ["/proto/"]
