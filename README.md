@@ -34,7 +34,7 @@ docker exec protobuf-laya sh build.sh
 # Typescript项目用户
 * **请务必保证proto文件头部具有package定义，否则可能会有问题。**
 * 将生成的js文件和protobuf.js上传至bin/libs/文件夹中
-* 将生成的d.ts文件上传至libs文件夹中
+* 将生成的d.ts文件上传至/libs文件夹中
 * 在index.html中其它script标签之前添加如下代码：
 ```html
 	<script type="text/javascript" src="libs/protobuf.js"></script>
