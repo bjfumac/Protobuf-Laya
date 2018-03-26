@@ -32,5 +32,10 @@ function onLoaded() {
     console.log(encodBytes);
     var newTest = protobuf.roots.laya.mylaya.Test.decode(encodBytes);
     console.log(newTest);
+    var txt = new Laya.Label();
+    txt.text = "newTest.string =" + newTest.string;
+    txt.color = "#ffffff";
+    txt.fontSize = 30;
+    Laya.stage.addChild(txt);
 }
 //# sourceMappingURL=LayaUISample.js.map
