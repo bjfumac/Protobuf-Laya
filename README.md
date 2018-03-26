@@ -7,7 +7,7 @@ A Docker image for creation protobuf files(Typescript and Javascript) compatible
 * **将PB协议生成静态代码，而非通过反射proto文件实现，因此序列化/反序列化性能高于反射模式。**
 * **在LayaIDE中具有代码提示，方便coding。**
 * **不调用eval指令，支持微信小程序。**
-* 生成器环境搭建由Docker自动完成，支持全部PC及服务器操作系统，运行在隔离环境中，不污染本地开发机。也可以请运维同学协助部署到服务器上共享使用。
+* 生成器环境搭建由Docker自动完成，支持Win、Mac、Linux操作系统，运行在隔离环境中，不污染本地开发机。也可以请运维同学协助部署到服务器上共享使用。
 * 支持最新版Protobuf。
 
 # Docker镜像安装(以Linux系统为例)
@@ -18,10 +18,13 @@ sudo docker build -t "bjfumac/protobuf-laya" .
 -- 将下面这行命令中的~/local替换成本地存放proto文件的路径
 sudo docker run --name protobuf-laya -v ~/local:/proto -idt bjfumac/protobuf-laya
 --以上Docker镜像安装完成
+
 --每次开机后请执行下面这行命令
 sudo docker start protobuf-laya
 -- 每次重新生成协议请执行下面这行命令(第一次执行可能会报错，再执行一次即可，以后就都正常了)
 sudo docker exec protobuf-laya sh build.sh
+
+--然后在本地存放proto的文件夹中可以找到生成的js和ts文件了
 ```
 # Javascript项目用户
 * 将生成的js文件和protobuf.js上传至bin/libs/文件夹中
