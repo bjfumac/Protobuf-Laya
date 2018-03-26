@@ -4,7 +4,7 @@ A Docker image for creation protobuf files(Typescript and Javascript) compatible
 &emsp;&emsp;随着H5网游的发展，开发者对长连接（Websocket）的使用率逐步上升，而对传输协议Protobuf的使用亦是开发环节中重要的一环。
 &emsp;&emsp;由于JavaScript有多种模块化机制，彼此兼容性较差，导致官方的Protobuf在LayaAir中使用困难。在社区中也经常有人会问到相关问题。因此为了完善LayaAir对Protobuf的支持，本人制作了一个基于Docker的Protobuf生成器以解决上述问题。  
 # 特点
-* **采用超小型Protobuf包（21k），远小于laya集成包（238k）。**
+* **采用超小型Protobuf包（21k），远小于旧集成包（238k）。**
 * **将PB协议生成静态代码，而非通过反射proto文件实现，因此序列化/反序列化性能高于反射模式。**
 * **在LayaIDE中具有代码提示，方便coding。**
 * **不调用eval指令，支持微信小程序。**
