@@ -4,4 +4,6 @@ RUN npm install  protobufjs chalk minimist glob tmp semver uglify-js espree esco
 VOLUME ["/proto/"]
 WORKDIR /
 ADD build.sh build.sh
+ADD fix.js fix.js
 RUN chmod 777 /build.sh
+RUN chmod 777 /fix.js
