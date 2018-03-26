@@ -61,5 +61,5 @@ bjfumac/protobuf-laya
 * 然后就可以开始用啦。具体参考Example。
 
 ### 如果觉得对你的项目有帮助，欢迎微信打赏请我喝一杯咖啡，谢谢^^
-##![avatar](https://github.com/bjfumac/Asset/raw/master/wx_ma.jpg)
+##![avatar](https://github.com/bjfumac/Asset/raw/master/images/wx_ma.jpg)
 
