@@ -31,7 +31,7 @@ bjfumac/protobuf-laya
 * 以上Docker镜像安装完成，今后不再需要操作上面的步骤。
 <br />
 
-* 每次开机后请执行下面这行命令：
+* 每次电脑开机后请执行下面这行命令启动Docker容器（至下次开机前只需执行一次）：
 ```
 	sudo docker start protobuf-laya
 ```
@@ -39,11 +39,11 @@ bjfumac/protobuf-laya
 ```
 	sudo docker exec protobuf-laya sh build.sh
 ```
-* 在存放proto的文件夹（如/MyProto）中可以找到生成的js和ts文件了。
+* 在存放proto的文件夹（如/MyProto）中可以找到生成的as、js和ts文件了。
 
 # Javascript项目用户
-* 将生成的js文件和protobuf.js上传至bin/libs/文件夹中
-* 将protobuf.min.js上传至bin/libs/min/文件夹中
+* 将生成的js文件和protobuf.js拷贝至项目bin/libs/文件夹中
+* 将protobuf.min.js拷贝至项目bin/libs/min/文件夹中
 * 在index.html中其它script标签之前添加如下代码：
 ```html
 	<script type="text/javascript" src="libs/protobuf.js"></script>
@@ -52,9 +52,9 @@ bjfumac/protobuf-laya
 * 然后就可以开始用啦。具体参考Example。
 # Typescript项目用户
 * **请务必保证proto文件头部具有package定义，否则可能会有问题。**
-* 将生成的js文件和protobuf.js上传至bin/libs/文件夹中
-* 将protobuf.min.js上传至bin/libs/min/文件夹中
-* 将生成的d.ts文件上传至/libs文件夹中
+* 将生成的js文件和protobuf.js拷贝至项目bin/libs/文件夹中
+* 将protobuf.min.js拷贝至项目bin/libs/min/文件夹中
+* 将生成的d.ts文件拷贝至项目/libs文件夹中
 * 在index.html中其它script标签之前添加如下代码：
 ```html
 	<script type="text/javascript" src="libs/protobuf.js"></script>
@@ -62,8 +62,8 @@ bjfumac/protobuf-laya
 ```
 * 然后就可以开始用啦。具体参考Example。
 # Actioncript项目用户
-* 将生成的js文件和protobuf.js上传至bin/h5/文件夹中
-* 将生成的as/messages文件夹上传至/src文件夹中
+* 将生成的js文件和protobuf.js拷贝至项目bin/h5/文件夹中
+* 将生成的as/messages文件夹拷贝至项目src文件夹中
 * 在index.html中其它script标签之前添加如下代码：
 ```html
 	<script type="text/javascript" src="libs/protobuf.js"></script>
@@ -72,7 +72,7 @@ bjfumac/protobuf-laya
 * 然后就可以开始用啦。具体参考Example。
 * **感谢宫晨同学提供的AS项目支持**
 
-#### LAYA官方QQ群：135887157和708696009 
+#### 欢迎在LAYA官方QQ群:135887157 交流使用心得 
 #### 本人QQ:68552233
 #### 如果觉得对你的项目有帮助，欢迎微信打赏请我喝一杯咖啡，谢谢^^
 ##![avatar](https://github.com/bjfumac/Asset/raw/master/images/wx_ma.jpg)
