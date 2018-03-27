@@ -6,5 +6,5 @@ VOLUME ["/proto/"]
 WORKDIR /
 ADD build.sh build.sh
 ADD fix.js fix.js
+ADD asconverter.js asconverter.js
 RUN chmod 777 /build.sh
-RUN chmod 777 /fix.js

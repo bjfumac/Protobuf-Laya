@@ -8,7 +8,7 @@ A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 * **将PB协议生成静态代码，而非通过反射proto文件实现，因此拥有更高的序列化/反序列化性能。**
 * **在LayaIDE中具有代码提示，方便coding。**
 * **不调用eval指令，支持微信小程序。**
-* 目前支持JavaScript和TypeScript项目，未来会支持ActionScript项目(AS项目已有手动处理方案，急用可直接联系我)。
+* 同时支持ActionScript、JavaScript和TypeScript项目。
 * 生成器环境搭建由Docker自动完成，支持Win、Mac、Linux操作系统，运行在隔离环境中，不污染本地开发机。也可以请运维同学协助部署到服务器上共享使用。
 * 支持最新版Protobuf。
 
@@ -59,9 +59,19 @@ bjfumac/protobuf-laya
 	<script type="text/javascript" src="libs/生成的.js"></script>
 ```
 * 然后就可以开始用啦。具体参考Example。
+# Actioncript项目用户
+* 将生成的js文件和protobuf.js上传至bin/h5/文件夹中
+* 将生成的as/messages文件夹上传至/src文件夹中
+* 在index.html中其它script标签之前添加如下代码：
+```html
+	<script type="text/javascript" src="libs/protobuf.js"></script>
+	<script type="text/javascript" src="libs/生成的.js"></script>
+```
+* 然后就可以开始用啦。具体参考Example。
+* **感谢宫晨同学提供的AS项目支持**
 
 #### LAYA官方QQ群：135887157和708696009 
-#### 本人QQ:68552233 (需要AS方案可联系)
+#### 本人QQ:68552233
 #### 如果觉得对你的项目有帮助，欢迎微信打赏请我喝一杯咖啡，谢谢^^
 ##![avatar](https://github.com/bjfumac/Asset/raw/master/images/wx_ma.jpg)
 

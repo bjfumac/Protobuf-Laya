@@ -1,0 +1,19 @@
+1,0.00,,0,Project command:e:\TestP2/.actionScriptProperties;iflash=false;windowshow=false;chromerun=false;quickcompile=true
+Project configuration:e:\TestP2/.actionScriptProperties.
+1,0.00,,0,output path:e:/TestP2/bin/h5/
+1,0.00,,0,Main Class:e:/TestP2/src/LayaUISample.as
+1,0.00,,0,output file:LayaUISample
+1,0.00,,0,compilerSourcePath e:/TestP2/libs/laya/src/
+
+1,0.00,,0,Compile Path:e:/TestP2/src/
+
+1,0.00,,0,Compile Path:e:/TestP2/libs/laya/src/
+
+1,0.00,e:/TestP2/src,0,Collect
+1,0.00,e:/TestP2/libs/laya/src,0,Collect
+1,2.00,,0,read class message
+1,89.68,,0,Disable Flash3D e:/TestP2/src/LayaUISample.as
+12,89.68,e:/TestP2/bin/h5/LayaUISample.max.js,1244361,
+11,89.68,e:/TestP2/bin/h5/LayaUISample.max.html,895,
+******************************************************************************
+14,89.68,,0,
