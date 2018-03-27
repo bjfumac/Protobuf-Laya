@@ -24,7 +24,7 @@ A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 ```
 * 将下面这行命令中的/your/proto/path替换成本地存放proto文件的路径（如/MyProto）。冒号后面的/proto不要改：
 ```
-	sudo docker run --name protobuf-laya -v /your/proto/path:/proto -idt 
+	sudo docker run --name protobuf-laya -v /your/proto/path:/proto -idt bjfumac/protobuf-laya
 ```
 &emsp;&emsp;以/MyProto为例的参考：sudo docker run --name protobuf-laya -v /MyProto:/proto -idt 
 bjfumac/protobuf-laya
