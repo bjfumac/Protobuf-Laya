@@ -1,4 +1,4 @@
-//import * as any;
+//import * as protobuf.from "protobufjs";
 
 /** Namespace mylaya. */
 declare module protobuf.roots.laya.mylaya {
@@ -53,7 +53,7 @@ declare module protobuf.roots.laya.mylaya {
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: mylaya.ITest, writer?: any): any;
+        public static encode(message: mylaya.ITest, writer?: protobuf.Writer): protobuf.Writer;
 
         /**
          * Encodes the specified Test message, length delimited. Does not implicitly {@link mylaya.Test.verify|verify} messages.
@@ -61,7 +61,7 @@ declare module protobuf.roots.laya.mylaya {
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: mylaya.ITest, writer?: any): any;
+        public static encodeDelimited(message: mylaya.ITest, writer?: protobuf.Writer): protobuf.Writer;
 
         /**
          * Decodes a Test message from the specified reader or buffer.
@@ -69,18 +69,18 @@ declare module protobuf.roots.laya.mylaya {
          * @param [length] Message length if known beforehand
          * @returns Test
          * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         * @throws {protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: any): mylaya.Test;
+        public static decode(reader: (protobuf.Reader|Uint8Array), length?: number): mylaya.Test;
 
         /**
          * Decodes a Test message from the specified reader or buffer, length delimited.
          * @param reader Reader or buffer to decode from
          * @returns Test
          * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         * @throws {protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: any): mylaya.Test;
+        public static decodeDelimited(reader: (protobuf.Reader|Uint8Array)): mylaya.Test;
 
         /**
          * Verifies a Test message.
@@ -102,7 +102,7 @@ declare module protobuf.roots.laya.mylaya {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: mylaya.Test, options?: any): { [k: string]: any };
+        public static toObject(message: mylaya.Test, options?: protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Test to JSON.
@@ -157,7 +157,7 @@ declare module protobuf.roots.laya.mylaya {
              * @param [writer] Writer to encode to
              * @returns Writer
              */
-            public static encode(message: mylaya.Test.IInner, writer?: any): any;
+            public static encode(message: mylaya.Test.IInner, writer?: protobuf.Writer): protobuf.Writer;
 
             /**
              * Encodes the specified Inner message, length delimited. Does not implicitly {@link mylaya.Test.Inner.verify|verify} messages.
@@ -165,7 +165,7 @@ declare module protobuf.roots.laya.mylaya {
              * @param [writer] Writer to encode to
              * @returns Writer
              */
-            public static encodeDelimited(message: mylaya.Test.IInner, writer?: any): any;
+            public static encodeDelimited(message: mylaya.Test.IInner, writer?: protobuf.Writer): protobuf.Writer;
 
             /**
              * Decodes an Inner message from the specified reader or buffer.
@@ -173,18 +173,18 @@ declare module protobuf.roots.laya.mylaya {
              * @param [length] Message length if known beforehand
              * @returns Inner
              * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             * @throws {protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decode(reader: any): mylaya.Test.Inner;
+            public static decode(reader: (protobuf.Reader|Uint8Array), length?: number): mylaya.Test.Inner;
 
             /**
              * Decodes an Inner message from the specified reader or buffer, length delimited.
              * @param reader Reader or buffer to decode from
              * @returns Inner
              * @throws {Error} If the payload is not a reader or valid buffer
-             * @throws {$protobuf.util.ProtocolError} If required fields are missing
+             * @throws {protobuf.util.ProtocolError} If required fields are missing
              */
-            public static decodeDelimited(reader: any): mylaya.Test.Inner;
+            public static decodeDelimited(reader: (protobuf.Reader|Uint8Array)): mylaya.Test.Inner;
 
             /**
              * Verifies an Inner message.
@@ -206,7 +206,7 @@ declare module protobuf.roots.laya.mylaya {
              * @param [options] Conversion options
              * @returns Plain object
              */
-            public static toObject(message: mylaya.Test.Inner, options?: any): { [k: string]: any };
+            public static toObject(message: mylaya.Test.Inner, options?: protobuf.IConversionOptions): { [k: string]: any };
 
             /**
              * Converts this Inner to JSON.
@@ -261,7 +261,7 @@ declare module protobuf.roots.laya.mylaya {
                  * @param [writer] Writer to encode to
                  * @returns Writer
                  */
-                public static encode(message: mylaya.Test.Inner.IInnerInner, writer?: any): any;
+                public static encode(message: mylaya.Test.Inner.IInnerInner, writer?: protobuf.Writer): protobuf.Writer;
 
                 /**
                  * Encodes the specified InnerInner message, length delimited. Does not implicitly {@link mylaya.Test.Inner.InnerInner.verify|verify} messages.
@@ -269,7 +269,7 @@ declare module protobuf.roots.laya.mylaya {
                  * @param [writer] Writer to encode to
                  * @returns Writer
                  */
-                public static encodeDelimited(message: mylaya.Test.Inner.IInnerInner, writer?: any): any;
+                public static encodeDelimited(message: mylaya.Test.Inner.IInnerInner, writer?: protobuf.Writer): protobuf.Writer;
 
                 /**
                  * Decodes an InnerInner message from the specified reader or buffer.
@@ -277,18 +277,18 @@ declare module protobuf.roots.laya.mylaya {
                  * @param [length] Message length if known beforehand
                  * @returns InnerInner
                  * @throws {Error} If the payload is not a reader or valid buffer
-                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 * @throws {protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decode(reader: any): mylaya.Test.Inner.InnerInner;
+                public static decode(reader: (protobuf.Reader|Uint8Array), length?: number): mylaya.Test.Inner.InnerInner;
 
                 /**
                  * Decodes an InnerInner message from the specified reader or buffer, length delimited.
                  * @param reader Reader or buffer to decode from
                  * @returns InnerInner
                  * @throws {Error} If the payload is not a reader or valid buffer
-                 * @throws {$protobuf.util.ProtocolError} If required fields are missing
+                 * @throws {protobuf.util.ProtocolError} If required fields are missing
                  */
-                public static decodeDelimited(reader: any): mylaya.Test.Inner.InnerInner;
+                public static decodeDelimited(reader: (protobuf.Reader|Uint8Array)): mylaya.Test.Inner.InnerInner;
 
                 /**
                  * Verifies an InnerInner message.
@@ -310,7 +310,7 @@ declare module protobuf.roots.laya.mylaya {
                  * @param [options] Conversion options
                  * @returns Plain object
                  */
-                public static toObject(message: mylaya.Test.Inner.InnerInner, options?: any): { [k: string]: any };
+                public static toObject(message: mylaya.Test.Inner.InnerInner, options?: protobuf.IConversionOptions): { [k: string]: any };
 
                 /**
                  * Converts this InnerInner to JSON.
@@ -368,7 +368,7 @@ declare module protobuf.roots.laya.mylaya {
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: mylaya.IOuter, writer?: any): any;
+        public static encode(message: mylaya.IOuter, writer?: protobuf.Writer): protobuf.Writer;
 
         /**
          * Encodes the specified Outer message, length delimited. Does not implicitly {@link mylaya.Outer.verify|verify} messages.
@@ -376,7 +376,7 @@ declare module protobuf.roots.laya.mylaya {
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: mylaya.IOuter, writer?: any): any;
+        public static encodeDelimited(message: mylaya.IOuter, writer?: protobuf.Writer): protobuf.Writer;
 
         /**
          * Decodes an Outer message from the specified reader or buffer.
@@ -384,18 +384,18 @@ declare module protobuf.roots.laya.mylaya {
          * @param [length] Message length if known beforehand
          * @returns Outer
          * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         * @throws {protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: any): mylaya.Outer;
+        public static decode(reader: (protobuf.Reader|Uint8Array), length?: number): mylaya.Outer;
 
         /**
          * Decodes an Outer message from the specified reader or buffer, length delimited.
          * @param reader Reader or buffer to decode from
          * @returns Outer
          * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         * @throws {protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: any): mylaya.Outer;
+        public static decodeDelimited(reader: (protobuf.Reader|Uint8Array)): mylaya.Outer;
 
         /**
          * Verifies an Outer message.
@@ -417,7 +417,7 @@ declare module protobuf.roots.laya.mylaya {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: mylaya.Outer, options?: any): { [k: string]: any };
+        public static toObject(message: mylaya.Outer, options?: protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this Outer to JSON.

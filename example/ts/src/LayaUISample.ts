@@ -36,7 +36,7 @@ function onLoaded(): void {
 	test.uint32 = 88;
 	test.inner = inner;
 
-	//请注意encode是异步的，如果需要即时调用最后一定要加finish();这个没有代码提示。
+	//请注意encode是异步的，如果需要即时调用最后一定要加finish()。
 	var encodBytes = protobuf.roots.laya.mylaya.Test.encode(test).finish();
 	console.log(encodBytes);
 	var newTest = protobuf.roots.laya.mylaya.Test.decode(encodBytes);

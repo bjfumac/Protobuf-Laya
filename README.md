@@ -9,7 +9,7 @@ A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 * **采用超小型Protobuf包（21k），远小于旧集成包（238k）。**
 * **将PB协议生成静态代码，而非通过反射proto文件实现，因此拥有更高的序列化/反序列化性能。**
 * **在LayaIDE中具有代码提示，方便coding。**
-* **不调用eval指令，支持微信小程序。**
+* **不调用eval和其它动态指令，支持微信小程序。**
 * 同时支持ActionScript、JavaScript和TypeScript项目。
 * 生成器环境搭建由Docker自动完成，支持Win、Mac、Linux操作系统，运行在隔离环境中，不污染本地开发机。也可以请运维同学协助部署到服务器上共享使用。
 * 支持最新版Protobuf。
@@ -54,7 +54,7 @@ bjfumac/protobuf-laya
 * **请务必保证proto文件头部具有package定义，否则可能会有问题。**
 * 将生成的js文件和protobuf.js拷贝至项目bin/libs/文件夹中
 * 将protobuf.min.js拷贝至项目bin/libs/min/文件夹中
-* 将生成的d.ts文件拷贝至项目/libs文件夹中
+* 将生成的d.ts文件和protobuf.d.ts拷贝至项目/libs文件夹中
 * 在index.html中其它script标签之前添加如下代码：
 ```html
 	<script type="text/javascript" src="libs/protobuf.js"></script>
@@ -73,7 +73,7 @@ bjfumac/protobuf-laya
 * **感谢宫晨同学提供的AS项目支持**
 
 #### 欢迎在LAYA官方QQ群:135887157 交流使用心得 
-#### 本人QQ:68552233
+#### 本人QQ:68552233 （反馈问题可联系）
 #### 如果觉得对你的项目有帮助，欢迎微信打赏请我喝一杯咖啡，谢谢^^
-##![avatar](https://github.com/bjfumac/Asset/raw/master/images/wx_ma.jpg)
+![avatar](https://github.com/bjfumac/Asset/raw/master/images/wx_ma.jpg)
 
