@@ -8,7 +8,7 @@ A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 # 特点
 * **采用超小型Protobuf包（21k），远小于旧集成包（238k）。**
 * **将PB协议生成静态代码，而非通过反射proto文件实现，因此拥有更高的序列化/反序列化性能。**
-* **在LayaIDE中具有代码提示，方便coding。**
+* **协议结构体在LayaIDE中具有完整的代码提示和类型检测，无需hard code，避免拼写造成的潜在错误，提高开发效率。**
 * **不调用eval和其它动态指令，支持微信小程序。**
 * 同时支持ActionScript、JavaScript和TypeScript项目。
 * 生成器环境搭建由Docker自动完成，支持Win、Mac、Linux操作系统，运行在隔离环境中，不污染本地开发机。也可以请运维同学协助部署到服务器上共享使用。
