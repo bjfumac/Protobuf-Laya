@@ -16,11 +16,9 @@ A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 
 # Docker镜像安装(以Linux系统为例)
 * 首先安装Docker，Linux只需要一行命令，Win10有安装包，请找度娘或者运维同学秒解。
-* 在你的系统中随意创建一个目录（如/MyProto），把所有的proto文件拷贝进去，然后按照下面步骤进行操作：
+* 在你的系统中随意创建一个目录（如/MyProto），建议选择FTP中的文件夹，把所有的proto文件拷贝进去，然后在命令行中按照下面步骤进行操作：
 ```
-	git clone https://github.com/bjfumac/protobuf-laya.git
-	cd protobuf-layabox-docker
-	sudo docker build -t "bjfumac/protobuf-laya" .
+	 git clone https://github.com/bjfumac/protobuf-laya.git;cd protobuf-layabox-docker;sudo docker build -t "bjfumac/protobuf-laya" .
 ```
 * 将下面这行命令中的/your/proto/path替换成本地存放proto文件的路径（如/MyProto）。冒号后面的/proto不要改：
 ```
@@ -31,13 +29,9 @@ bjfumac/protobuf-laya
 * 以上Docker镜像安装完成，今后不再需要操作上面的步骤。
 <br />
 
-* 每次电脑开机后请执行下面这行命令启动Docker容器（至下次开机前只需执行一次）：
+* 每次需要生成协议时请执行下面这行命令：
 ```
-	sudo docker start protobuf-laya
-```
-* 需要重新生成协议时请执行下面这行命令：
-```
-	sudo docker exec protobuf-laya sh build.sh
+	sudo docker start protobuf-laya;sudo docker exec protobuf-laya sh build.sh
 ```
 * 在存放proto的文件夹（如/MyProto）中可以找到生成的as、js和ts文件了。
 
