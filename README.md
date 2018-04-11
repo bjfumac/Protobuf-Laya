@@ -15,7 +15,7 @@ A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 * 支持最新版Protobuf。
 
 # Docker镜像安装(以Linux系统为例)
-* 首先安装Docker，Linux只需要一行命令，Win10有安装包。官方安[下载地址](https://www.docker.com/community-edition)和[安装手册](https://docs.docker.com/engine/installation/linux/)。搞不定英文的同学请找度娘或者运维同事秒解，也可以直接买个公网docker容器。
+* 首先安装Docker，Linux只需要一行命令，Win10有安装包。官方[下载地址](https://www.docker.com/community-edition)和[安装手册](https://docs.docker.com/engine/installation/linux/)。搞不定英文的同学请找度娘或者运维同事秒解，也可以直接买个公网docker容器。
 * 在你的系统中随意创建一个目录（如/MyProto），建议选择FTP中的文件夹，把所有的proto文件拷贝进去，然后在命令行中按照下面步骤进行操作（复制时不要遗漏命令行最后面的点）：
 ```
 	 git clone https://github.com/bjfumac/protobuf-laya.git;cd protobuf-laya;sudo docker build -t "bjfumac/protobuf-laya" .;
