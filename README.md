@@ -2,6 +2,7 @@
 A Docker image for creation protobuf files compatible with LayaAir(Layabox).
 # 说明
 &emsp;&emsp;支持Laya 2.x的版本请访问[这个仓库](https://github.com/bjfumac/Protobuf-MiniGame)
+
 &emsp;&emsp;随着Html5游戏行业的发展，H5游戏的类型慢慢地从单机小游戏、轻交互休闲游戏到重交互竞技类游戏过渡，开发者对网络实时数据交互的需求开始上升，而数据交互的核心：交互协议的选择成了关键一环。 那么我们该选什么样的数据交互协议呢？<br />
 &emsp;&emsp;如果你的项目只需要个排行榜这样的功能，那么xml、json足够满足你的需求，开发流程简单，游戏包体小巧。<br />
 &emsp;&emsp;如果你的项目前后端交互较多，甚至是实时交互，那么我推荐选择Protobuf，它是google创造的一种数据交换的格式，广泛地应用在各种互联网场景中。在网络游戏中，Protobuf亦大放光彩。大多数实时网游的数据交互协议都是采用Protobuf或是它的变体实现的。我相信你一定听说过它。<br />
